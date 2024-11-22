@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Zaid Rangoonwala | About{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <section class="about-hero">
+        <h1 class="glitch about-title" data-text="About Me">About Me</h1>
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="{{ url_for('static', filename='images/male_dev.jpg') }}" alt="Zaid Rangoonwala">
+            </div>
+            <div class="profile-info">
+                <h2>Zaid Rangoonwala</h2>
+                <p class="job-title">Junior Web Developer</p>
+                <p class="bio">I'm a passionate junior web developer with a keen eye for design and a love for creating
+                    seamless user experiences. My journey in tech is driven by curiosity and a constant desire to
+                    learn and innovate.</p>
+                <a href="{{ url_for('static', filename='resume/My_Resume.pdf') }}" class="download-resume-btn" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <ul class="skill-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>Node.js</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <ul class="skill-list">
+                    <li>Git</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey-section">
+        <h2>My Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2024</h3>
+                    <p>Graduated with a degree in Computer Science</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Currently</h3>
+                    <p>Started freelancing as a web developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interests-section">
+        <h2>Interests & Hobbies</h2>
+        <div class="interests-container">
+            <div class="interest-item">
+                <i class="fas fa-book"></i>
+                <p>Reading</p>
+            </div>
+            <div class="interest-item">
+                <i class="fas fa-utensils"></i>
+                <p>Trying new foods</p>
+            </div>
+            <div class="interest-item">
+                <i class="fas fa-gamepad"></i>
+                <p>Playing video games</p>
+            </div>
+            <div class="interest-item">
+                <i class="fas fa-futbol"></i>
+                <p>Playing football</p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Zaid Rangoonwala{% endblock %}
+
+{% block content %}
+<section class="projects">
+    <h1 class="glitch" data-text="My Projects">My Projects</h1>
+    <div class="scene">
+        <div class="cube">
+            <div class="cube-face front">
+                <h2>Ecom Website</h2>
+                <p>Description of Project 1</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="cube-face back">
+                <h2>Weather Dashboard</h2>
+                <p>Description of Project 2</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="cube-face right">
+                <h2>Quote Generator</h2>
+                <p>Description of Project 3</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="cube-face left">
+                <h2>Project 4</h2>
+                <p>Description of Project 4</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="cube-face top">
+                <h2>Project 5</h2>
+                <p>Description of Project 5</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="cube-face bottom">
+                <h2>Project 6</h2>
+                <p>Description of Project 6</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="cube-controls">
+        <button id="rotate-left">Rotate Left</button>
+        <button id="rotate-right">Rotate Right</button>
+    </div>
+</section>
+
+<!-- Add this modal structure at the end of your content block -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <a id="modal-link" href="#" target="_blank">View Project</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+{% endblock %}

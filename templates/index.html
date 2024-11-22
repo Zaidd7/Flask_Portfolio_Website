@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Zaid Rangoonwala | Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="glitch" data-text="Zaid Rangoonwala">Zaid Rangoonwala</h1>
+        <p class="subtitle">Junior Web Developer</p>
+        <div class="cta-buttons">
+            <a href="{{ url_for('projects') }}" class="cta-button primary">View Projects</a>
+            <a href="{{ url_for('contact') }}" class="cta-button secondary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
