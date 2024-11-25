@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'Weather Dashboard': {
             description: 'A weather application that provides current weather and forecasts for cities worldwide.',
-            link: '#'
+            link: 'https://weather-dashboard-flask.vercel.app/'
         },
         'Quote Generator': {
             description: 'An application that generates random quotes and allows users to share them on social media.',
