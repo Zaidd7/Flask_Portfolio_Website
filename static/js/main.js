@@ -35,15 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Create the hamburger menu
-    const hamburger = document.createElement('div');
-    hamburger.classList.add('hamburger');
-    hamburger.innerHTML = '<div></div><div></div><div></div>'; // Create hamburger icon
-    document.querySelector('.header-content').appendChild(hamburger); // Append to header
-
+    // Select the hamburger and navigation menu
+    const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('nav ul');
 
-    // Toggle the navigation menu on hamburger click
+    // Add click event to the hamburger menu
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active'); // Toggle the active class
     });
