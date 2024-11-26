@@ -1518,6 +1518,14 @@ footer p {
     display: flex;
     justify-content: space-between; /* Space between logo and hamburger */
     align-items: center; /* Center items vertically */
+    padding: 0 2rem; /* Add some padding to the header */
+}
+
+/* Logo styles */
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
 }
 
 /* Hamburger menu styles */
