@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Hamburger menu functionality
+    // Create the hamburger menu
     const hamburger = document.createElement('div');
     hamburger.classList.add('hamburger');
     hamburger.innerHTML = '<div></div><div></div><div></div>'; // Create hamburger icon
@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navMenu = document.querySelector('nav ul');
 
+    // Toggle the navigation menu on hamburger click
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active'); // Toggle the active class
     });
