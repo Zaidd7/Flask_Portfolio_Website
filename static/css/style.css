@@ -1369,3 +1369,105 @@ footer p {
         margin-bottom: 10px;
     }
 }
+
+/* Add this media query for mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust header and footer layout */
+    .header-content, .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* Adjust hero section */
+    .hero {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .hero h1 {
+        font-size: 3rem; /* Adjusted font size */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Adjusted font size */
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    /* Adjust projects section */
+    .projects {
+        padding-top: 30px;
+    }
+
+    .projects h1.glitch {
+        font-size: 2.8rem; /* Adjusted font size */
+    }
+
+    .scene {
+        width: 300px; /* Adjusted for smaller screens */
+        height: 300px;
+    }
+
+    .cube-face {
+        width: 300px;
+        height: 300px;
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    /* Adjust contact form */
+    .contact-container {
+        padding: 40px 20px;
+    }
+
+    .form-group,
+    .submit-btn {
+        max-width: 100%;
+    }
+
+    /* Adjust thank you page */
+    .thank-you-content {
+        padding: 2rem;
+    }
+
+    .thank-you-title {
+        font-size: 2.5rem; /* Adjusted font size */
+    }
+
+    .thank-you-message {
+        font-size: 1.3rem; /* Adjusted font size */
+    }
+
+    .follow-up {
+        font-size: 1.1rem; /* Adjusted font size */
+    }
+
+    .back-home-btn {
+        font-size: 1rem; /* Adjusted font size */
+        padding: 10px 20px;
+    }
+
+    /* Adjust service cards */
+    .service-card {
+        padding: 1rem; /* Adjusted padding */
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem; /* Adjusted font size */
+    }
+
+    .service-card p {
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+}
