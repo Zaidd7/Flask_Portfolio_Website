@@ -1498,7 +1498,7 @@ footer p {
         flex-direction: column;
         position: absolute;
         top: 60px; /* Adjust based on header height */
-        right: 0;
+        right: 0; /* Align to the right */
         background-color: rgba(10, 25, 47, 0.9);
         width: 100%;
         z-index: 1;
@@ -1510,5 +1510,53 @@ footer p {
 
     .hamburger {
         display: flex; /* Show hamburger on mobile */
+    }
+}
+
+/* Ensure the header content is displayed as a flex container */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Space between logo and hamburger */
+    align-items: center; /* Center items vertically */
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 4px 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex; /* Ensure nav is a flex container */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0; /* Align to the right */
+        background-color: rgba(10, 25, 47, 0.9);
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
     }
 }
