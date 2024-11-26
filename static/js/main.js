@@ -34,4 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Hamburger menu functionality
+    const hamburger = document.createElement('div');
+    hamburger.classList.add('hamburger');
+    hamburger.innerHTML = '<div></div><div></div><div></div>'; // Create hamburger icon
+    document.querySelector('.header-content').appendChild(hamburger); // Append to header
+
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active'); // Toggle the active class
+    });
 });
