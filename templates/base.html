@@ -60,20 +60,20 @@
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="{{ url_for('static', filename='js/projects.js') }}"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('nav ul');
+            const nav = document.querySelector('nav');
 
-            hamburger.addEventListener('click', function () {
+            hamburger.addEventListener('click', function() {
                 hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
+                nav.classList.toggle('active');
             });
 
             // Close menu when a link is clicked
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', () => {
                     hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
+                    nav.classList.remove('active');
                 });
             });
         });
