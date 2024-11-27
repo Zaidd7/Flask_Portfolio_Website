@@ -34,13 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // Select the hamburger and navigation menu
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    // Add click event to the hamburger menu
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active'); // Toggle the active class
-    });
 });
