@@ -1429,6 +1429,7 @@ nav ul li {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .hamburger span {
