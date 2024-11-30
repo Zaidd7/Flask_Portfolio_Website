@@ -1513,6 +1513,82 @@ nav ul li {
     .cube:hover {
         animation: none;
     }
+
+    .about-container {
+        padding: 1rem;
+    }
+
+    .about-hero {
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .profile-info h2 {
+        font-size: 2rem;
+    }
+
+    .job-title {
+        font-size: 1.2rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .download-resume-btn {
+        margin-top: 1rem;
+    }
+
+    .skills-container, .interests-container {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
+
+    .timeline-item:nth-child(odd)::after,
+    .timeline-item:nth-child(even)::after {
+        left: 15px;
+    }
 }
 
 /* Hamburger animation */
